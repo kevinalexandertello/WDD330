@@ -1,5 +1,5 @@
-import {writeToLS, readFromLS} from './ls.js'
-import {querySelector} from './utilities.js'
+import {writeToLS, readFromLS} from 'https://kevinalexandertello.github.io/WDD330/ls.js'
+import {querySelector} from 'https://kevinalexandertello.github.io/WDD330/utilities.js'
 
 export default class Todo{
     constructor(Id, key , inputId , target){
