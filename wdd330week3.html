@@ -54,7 +54,7 @@ pattern.exec('joking'); <br>
                             <p>For example, we can use the nodeType property to find out what type of node it is: <br>
 
                                 body.nodeType;
-                                << 1
+                                 1
                                        <br>        
                                 All nodes have a numerical code to signify what type they are. These are summmarized in the table below.
                                 <br>
@@ -83,15 +83,15 @@ pattern.exec('joking'); <br>
                                 We can also use the nodeName property to find the name of the element:
                                 
                                 body.nodeName;
-                                << "BODY"
-                                                </p>
+                                "BODY"
+                                             
                                                 <p>
                                                     Not Actually Arrays
 Node lists are array-like objects, but they are not arrays. You can access each item using index notation. For example, document.images[0] will return the first image in the node list of all the images in the document.
 
 They also have a length property, which can be used to iterate through every element using a for loop, like so:<br>
 
-for (let i=0 ; i < document.images.length ; i++) {<br>
+for (let i=0 ; i document.images.length ; i++) {<br>
 
 // do something with each image using document.images[i]
 
@@ -119,7 +119,7 @@ Once the node list has been turned into an array, you can use all the array meth
                 <p>wonderWoman.classList.add('warrior'); <br><br>
                                     
                     wonderWoman.className; <br>
-                    << "hero warrior"<br><br>
+                    "hero warrior"<br><br>
                                     
                     
                     wonderWoman.classList.remove('warrior');<br>
@@ -127,18 +127,18 @@ Once the node list has been turned into an array, you can use all the array meth
                     The toggle method is a particularly useful method that will add a class if an element doesn’t have it already, and remove the class if it does have it. It returns true if the class was added and false if it was removed. For example:<br><br>
                     
                     wonderWoman.classList.toggle('hero'); // will remove the 'hero' class<br>
-                    << false<br>
+                    false<br>
                     
                     wonderWoman.classList.toggle('sport'); // will add the 'hero' class back<br>
-                    << true<br>
+                    true<br>
                                     
                     The contains method will check to see if an element has a particular class:<br>
                     
                     wonderWoman.classList.contains('hero');<br>
-                    << true<br>
+                     true<br>
                     
                     wonderWoman.classList.contains('villain');<br>
-                    << false</p>
+                    false</p>
 
                     <br>
                     <p>function addClass(element,newClass){ <br>
@@ -156,11 +156,11 @@ Once the node list has been turned into an array, you can use all the array meth
                             For example, the CSS property background-color becomes backgroundColor. We can change the color of the superman background to green using this code:<br> <br>
                             
                             superman.style.backgroundColor = 'blue'; <br>
-                            << "blue"</p>
+                             "blue"</p>
                             <p>Alternatively, the bracket notation that we saw in chapter 5 can also be used, meaning that CSS properties can be provided as a string and don't need the camelCase notation: <br> <br>
 
                                 superman.style['background color'] = 'blue'; <br>
-                                << "blue"</p>
+                              "blue"</p>
                                 <h3>Checking Styles Properties</h3>
                                 <p>There is a function called getComputedStyle() that will retrieve all the style information of an element that is given as a parameter. This is a read-only property, so is only used for finding out information about the style of an element. <br>
 
@@ -168,13 +168,13 @@ Once the node list has been turned into an array, you can use all the array meth
                                     
                                     getComputedStyle(superman); <br> <br>
                                     getComputedStyle(superman).getPropertyCSSValue('color').cssText; <br>
-                                    << "rgb(0, 0, 0)" br
+                                     "rgb(0, 0, 0)" br
                                                     
                                     This tells us that the color of the text is rgb(0, 0, 0), which is black. br
                                     
                                     You can read more on the Mozilla Developer Network about the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle">getComputedStyle() </a>   function and about CSSStyleDeclaration objects.</p>
         
-                        </div>
+                     
   <p>Code from my team in week 3
   </p>
   <a href="https://kevinalexandertello.github.io/WDD330/teamassignmentweek3.html">Team Assignment week 3</a>
