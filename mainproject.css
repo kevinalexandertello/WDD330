@@ -1,0 +1,664 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+* {
+	padding: 0px;
+	margin: 0px;
+	font-family: sans-serif;
+}
+html{
+    background-image:url("C:/Users/Lenovo-PC/Documents/frontend project/images/background-image.jpg") ;
+}
+.console-info{
+    padding-left: 40px;
+    padding-right: 50px;
+    padding-top: 50px;
+}
+.turn-left{
+    display:flex;
+    flex-direction: row;
+    padding: 3%;
+    background: #bdc3c7; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #bdc3c7, #2c3e50); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #bdc3c7, #2c3e50);
+}
+.turn-right{
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 3%;
+    /* background-color: #3a3a3ac0; */
+    background: #bdc3c7; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #bdc3c7, #2c3e50); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #bdc3c7, #2c3e50);
+}
+.main-images{
+    padding: 3%;
+}
+
+.title-left{
+    padding-top: 16%;
+    text-align: center;
+}
+.games-info-left{
+    text-align: center;
+    font-size: large;
+    font-family: 'Advent Pro', sans-serif;
+    padding-top: 3%;
+}
+.title-right{
+    padding-top: 16%;
+    text-align: center;
+}
+.games-info-right{
+    text-align: center;
+    font-size: large;
+    font-family: 'Advent Pro', sans-serif;
+    padding-top: 3%;
+}
+
+.main-title{
+    display:block;
+    text-align: center;
+    font-size: 300%;
+    font-family: 'Roboto Condensed', sans-serif;
+    background: #bdc3c7;
+}
+.icons{
+    padding-top: 10px;
+    display: block;
+    text-align: right;
+    justify-content: space-between;
+}
+.icons img{
+    padding: 10px;
+    width: 75px;
+    height: 75px;
+}
+main{
+    border-left:5px solid #0f2027;
+    border-right: 5px solid #0f2027;
+}
+h3{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.games-info{
+    font-size: large;
+    font-family: 'Advent Pro', sans-serif;
+}
+.container {
+    padding: 0px;
+    margin: auto;
+    width: 500px;
+    height: 500px;
+    background-color: #ffb;
+    border: 8px dashed #993;
+}
+
+
+
+#player {
+	background-color: #900;
+	border: 4px dashed #b22;
+	width: 50px;
+	height: 50px;
+	border-radius: 29px;
+	position: absolute;
+	transition: all 0.3s
+}
+.pointer {
+	background-color: #444;
+	height: 30px;
+	margin-top: 30px;
+	border-bottom: 0px;
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+	padding: 10px 0px;
+}
+.navigation{
+    color: #ffffff;
+    display:flex;
+    flex-direction: row; 
+    justify-content: left;
+    font-size: 130%;
+    background: #0f2027; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0f2027, #203a43, #2c5364); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+}
+.navigation a{
+    color:#ffffff;
+    text-decoration:none;
+}
+.logo-box{
+    padding-left: 95%;
+}
+.navigation li{
+    list-style:none;
+    padding-right:10%;
+    padding-left: 5%;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+.sub-navigation{
+    position:absolute;
+    background:#333333;
+    width:13%;
+    visibility: hidden;
+    opacity:0;
+    transition: opacity 1.5s;
+}
+.sub-navigation li a{
+    display:block;
+    padding:15px;
+    color:#fff;
+    font-family:'Advent Pro', sans-serif;
+    text-decoration: none;
+}
+.navigation li:hover .sub-navigation{
+    visibility: visible;
+    opacity: 1;
+}
+.header-pic h3{
+    margin-right:70px;
+    display:flex;
+}
+.buttonaccount{
+    margin-right:70px;
+}
+body{
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 90%;
+    height: 90%;
+}
+
+footer{
+    border-top: 5px solid #0f2027 ;
+    border-right: 5px solid #0f2027 ;
+    display:flex;
+    background-color: orange;
+    flex-direction: row;
+}
+.ul-info{
+    font-family: 'Advent Pro', sans-serif;
+}
+ul{
+    list-style: none;
+}
+.details{
+    display: flex;
+    flex-direction:row;
+}
+.details-title{
+    display:block;
+    text-align:center;
+    font-size: 180%;
+    padding-left:23%;
+    padding-top:30px;
+}
+.logo{
+    width:90px;
+    height:70px;
+}
+.console{
+    flex-direction: column;
+    padding-left:2%;
+}
+.thumb-images{
+    width: 100px;
+    height:100px;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 40px;
+}
+.thumb-images img{
+    padding:10px;
+}
+.zoom{
+    padding: 50px;
+    transition: transform .2s; /* Animation */
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+.zoom:hover {
+    transform: scale(2.0); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.main-consoleimg{
+    width:380px;
+    height:380px;
+}
+img{
+    border: 5px solid #555;
+    border-radius: 5px;
+}
+.info {
+    padding-left: 3%;
+    border-left: 5px solid #0f2027;
+    border-right: 5px solid #0f2027;
+}
+/*Css to the openweatherApi*/
+.contaier {
+    background-color: #DDC9B4;
+    padding: 20px;
+    color: #2A3D45;
+    display: flex;
+    display: none;
+  }
+  
+  .contaier > .block {
+    padding: 20px;
+  }
+  
+  .block:first-child {
+  background-color: #2A3D45;
+  color: #DDC9B4;
+  }
+  
+  .information-container {
+    display: flex;
+  }
+  
+  .information {
+    margin-left: 5px;
+  }
+  
+  #location {
+    font-weight: bold;
+    font-size: 22px;  
+  }
+  
+  .loader,
+  .loader:before,
+  .loader:after {
+  border-radius: 50%;
+  }
+  .loader {
+  color: #DDC9B4;
+  font-size: 11px;
+  text-indent: -99999em;
+  position: relative;
+  width: 10em;
+  height: 10em;
+  box-shadow: inset 0 0 0 1em;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  }
+  .loader:before,
+  .loader:after {
+  position: absolute;
+  content: '';
+  }
+  .loader:before {
+  width: 5.2em;
+  height: 10.2em;
+  background: #2A3D45;
+  border-radius: 10.2em 0 0 10.2em;
+  top: -0.1em;
+  left: -0.1em;
+  -webkit-transform-origin: 5.1em 5.1em;
+  transform-origin: 5.1em 5.1em;
+  -webkit-animation: load2 2s infinite ease 1.5s;
+  animation: load2 2s infinite ease 1.5s;
+  }
+  .loader:after {
+  width: 5.2em;
+  height: 10.2em;
+  background: #2A3D45;
+  border-radius: 0 10.2em 10.2em 0;
+  top: -0.1em;
+  left: 4.9em;
+  -webkit-transform-origin: 0.1em 5.1em;
+  transform-origin: 0.1em 5.1em;
+  -webkit-animation: load2 2s infinite ease;
+  animation: load2 2s infinite ease;
+  }
+  @-webkit-keyframes load2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+  }
+  @keyframes load2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+  }
+
+
+
+
+/* Smartphone*/
+@media (max-width:425px){
+    @import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+* {
+	padding: 0px;
+	margin: 0px;
+	font-family: sans-serif;
+}
+html{
+    background-image:url("C:/Users/Lenovo-PC/Documents/frontend project/images/background-image.jpg") ;
+}
+.turn-left{
+    display:flex;
+    flex-direction: column;
+    padding: 3%;
+    background: #bdc3c7; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #bdc3c7, #2c3e50); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #bdc3c7, #2c3e50);
+}
+.turn-right{
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+    /* background-color: #3a3a3ac0; */
+    background: #bdc3c7; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #bdc3c7, #2c3e50); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #bdc3c7, #2c3e50);
+}
+main img{
+    width:200px;
+    height:200px;
+}
+.main-images{
+    padding: 1%;
+}
+
+.title-left{
+    padding-top: 16%;
+    text-align: center;
+}
+.games-info-left{
+    text-align: center;
+    font-size: large;
+    font-family: 'Advent Pro', sans-serif;
+    padding-top: 3%;
+}
+.title-right{
+    padding-top: 16%;
+    text-align: center;
+}
+.games-info-right{
+    text-align: center;
+    font-size: large;
+    font-family: 'Advent Pro', sans-serif;
+    padding-top: 3%;
+}
+
+.main-title{
+    display:block;
+    text-align: center;
+    font-size: 300%;
+    font-family: 'Roboto Condensed', sans-serif;
+    background: #bdc3c7;
+}
+.icons{
+    padding-top: 10px;
+    display: flex;
+    text-align: row;
+}
+.icons img{
+    width: 40px;
+    height: 40px;
+}
+main{
+    border-left:5px solid #0f2027;
+    border-right: 5px solid #0f2027;
+}
+h3{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.games-info{
+    font-size: large;
+    font-family: 'Advent Pro', sans-serif;
+}
+/*Here start the game css*/
+.container {
+    padding: 0px;
+    margin: auto;
+    width: 500px;
+    height: 500px;
+    background-color: #ffb;
+    border: 8px dashed #993;
+}
+
+
+
+#player {
+	background-color: #900;
+	border: 4px dashed #b22;
+	width: 50px;
+	height: 50px;
+	border-radius: 29px;
+	position: absolute;
+	transition: all 0.3s
+}
+.pointer {
+	background-color: #444;
+	height: 30px;
+	margin-top: 30px;
+	border-bottom: 0px;
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+	padding: 10px 0px;
+}
+/*here finish  the game css*/
+.navigation{
+    color: #ffffff;
+    display:flex;
+    flex-direction: row; 
+    font-size: 130%;
+    background: #0f2027; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0f2027, #203a43, #2c5364); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+}
+.navigation a{
+    color:#ffffff;
+    text-decoration:none;
+}
+.navigation li{
+    list-style:none;
+    padding-right:5px;
+    padding-left: 10px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+.sub-navigation{
+    position:absolute;
+    background:#333333;
+    width:50px;
+    visibility: hidden;
+    opacity:0;
+    transition: opacity 1.5s;
+}
+.sub-navigation li a{
+    display:block;
+    padding:10px;
+    color:#fff;
+    font-family:'Advent Pro', sans-serif;
+    text-decoration: none;
+}
+.navigation li:hover .sub-navigation{
+    visibility: visible;
+    opacity: 1;
+}
+
+body{
+    margin-left: 1%;
+    margin-right: 1%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 97%;
+    height: 97%;
+}
+
+footer{
+    border-top: 5px solid #0f2027 ;
+    display:flex;
+    flex-direction: column;
+    background-color: orange;
+}
+.ul-info{
+    font-family: 'Advent Pro', sans-serif;
+}
+ul{
+    list-style: none;
+}
+.details{
+    display: flex;
+    flex-direction:column;
+}
+.details-title{
+    display:block;
+    text-align:center;
+    font-size: 180%;
+    padding-left:23%;
+    padding-top:30px;
+}
+.logo{
+    width:90px;
+    height:70px;
+}
+.console{
+    flex-direction: column;
+    padding-left:2%;
+}
+.thumb-images{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 5px;
+    padding-right: 10px;
+}
+.zoom{
+    padding-right: 30px;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+}
+.main-consoleimg{
+    width:280px;
+    height:280px;
+}
+img{
+    border: 5px solid #555;
+    border-radius: 5px;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    border-left: 5px solid #0f2027;
+    border-right: 5px solid #0f2027;
+}
+/*Css to the openweatherApi*/
+.contaier {
+    background-color: #DDC9B4;
+    padding: 20px;
+    color: #2A3D45;
+    display: flex;
+    display: none;
+  }
+  
+  .contaier > .block {
+    padding: 20px;
+  }
+  
+  .block:first-child {
+  background-color: #2A3D45;
+  color: #DDC9B4;
+  }
+  
+  .information-container {
+    display: flex;
+  }
+  
+  .information {
+    margin-left: 5px;
+  }
+  
+  #location {
+    font-weight: bold;
+    font-size: 22px;  
+  }
+  
+  .loader,
+  .loader:before,
+  .loader:after {
+  border-radius: 50%;
+  }
+  .loader {
+  color: #DDC9B4;
+  font-size: 11px;
+  text-indent: -99999em;
+  position: relative;
+  width: 10em;
+  height: 10em;
+  box-shadow: inset 0 0 0 1em;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  }
+  .loader:before,
+  .loader:after {
+  position: absolute;
+  content: '';
+  }
+  .loader:before {
+  width: 5.2em;
+  height: 10.2em;
+  background: #2A3D45;
+  border-radius: 10.2em 0 0 10.2em;
+  top: -0.1em;
+  left: -0.1em;
+  -webkit-transform-origin: 5.1em 5.1em;
+  transform-origin: 5.1em 5.1em;
+  -webkit-animation: load2 2s infinite ease 1.5s;
+  animation: load2 2s infinite ease 1.5s;
+  }
+  .loader:after {
+  width: 5.2em;
+  height: 10.2em;
+  background: #2A3D45;
+  border-radius: 0 10.2em 10.2em 0;
+  top: -0.1em;
+  left: 4.9em;
+  -webkit-transform-origin: 0.1em 5.1em;
+  transform-origin: 0.1em 5.1em;
+  -webkit-animation: load2 2s infinite ease;
+  animation: load2 2s infinite ease;
+  }
+  @-webkit-keyframes load2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+  }
+  @keyframes load2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+}
