@@ -1,4 +1,4 @@
-import Todo from './Todo.js'
+import Todo from 'https://kevinalexandertello.github.io/WDD330/Todo.js'
 let myTodo = new Todo('#showList','data','#newTask')
 let Id = null
 
